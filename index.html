@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog preview card</title>
+    <meta
+      name="og:description"
+      content="Front End Mentor challenge 'Blog preview card'."
+    />
+    <style>
+      @font-face {
+        font-family: figtree;
+        src: url(fonts/Figtree-Italic-VariableFont_wght.ttf);
+      }
+      body {
+        margin: 0;
+        background-color: #f4d04e;
+        font-family: figtree;
+      }
+
+      h1,
+      p {
+        margin: 0;
+      }
+
+      .card {
+        margin: 300px auto;
+        width: 300px;
+        padding: 24px;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .card .blog-img {
+        max-width: 100%;
+        display: block;
+        border-radius: 10px;
+      }
+
+      .card .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        font-size: 12px;
+
+        .category {
+          background-color: #f4d04e;
+          padding: 4px 12px;
+          border-radius: 4px;
+          font-weight: bold;
+        }
+
+        .title {
+          font-size: 20px;
+          transition: 0.3s;
+          cursor: pointer;
+        }
+        .title:hover,
+        .title:focus,
+        .title:active {
+          color: #f4d04e;
+        }
+        .description {
+          color: #6b6b6b;
+          font-size: 14px;
+          text-transform: capitalize;
+        }
+      }
+
+      .author {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+          display: block;
+          width: 32px;
+        }
+
+        .author-name {
+          color: #111111;
+          font-weight: bold;
+          font-size: 12px;
+        }
+      }
+
+      @media (min-width: 391px) {
+        .card {
+          margin: 219px auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        src="images/illustration-article.svg"
+        alt="illusrattion"
+        class="blog-img"
+      />
+      <div class="content">
+        <div class="category">Loading</div>
+        <span class="publich-date">Published 24 SET 2026</span>
+        <h1 class="title">HTML & CSS foundations</h1>
+        <p class="description">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+      </div>
+      <div class="author">
+        <img src="images/image-avatar.webp" alt="auther image" />
+        <span class="author-name">Greg Hooper</span>
+      </div>
+    </div>
+  </body>
+</html>
