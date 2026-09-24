@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Design Preview](/design/desktop-preview.jpg)
+![Design Preview](design/desktop-design.jpg)
 
 *(Note: Replace the image path above with your own screenshot if available)*
 
