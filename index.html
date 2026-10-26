@@ -137,6 +137,12 @@
         font-weight: bold;
         font-size: 0.75rem;
       }
+
+      @media (prefers-reduced-motion: reduce) {
+        .card .title {
+          transition: none;
+        }
+      }
     </style>
   </head>
   <body>
